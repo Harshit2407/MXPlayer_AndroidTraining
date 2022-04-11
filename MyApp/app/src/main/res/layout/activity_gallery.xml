@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gallery">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MX Gallery"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/gallery"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/gallery"
+            android:background="@drawable/delhi"
+            android:layout_marginTop="40dp"
+            android:id="@+id/delhi"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/gallery"
+            android:layout_toRightOf="@+id/delhi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/mumbai"
+            android:id="@+id/mumbai"
+            />
+       <TextView
+           android:layout_width="60dp"
+           android:layout_height="20dp"
+           android:text="DELHI"
+           android:id="@+id/delhitxt"
+           android:layout_below="@+id/delhi"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="50dp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="20dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/mumbai"
+        android:layout_toRightOf="@id/delhitxt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"
+        android:text="MUMBAI"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/mumbaitxt"/>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/delhitxt"
+        android:background="@drawable/dehradun"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dehradun"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/mumbaitxt"
+        android:layout_toRightOf="@+id/dehradun"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/banglore"
+        android:id="@+id/banglore"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:text="DEHRADUN"
+        android:id="@+id/dehraduntxt"
+        android:layout_below="@+id/dehradun"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/banglore"
+        android:layout_toRightOf="@id/dehraduntxt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:text="BANGLORE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/bangloretxt"/>
+
+
+</RelativeLayout>
